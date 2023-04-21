@@ -8,11 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("task-section__list-todo");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("task-section__list-completed");//completed-tasks
-
+var taskInput=document.querySelector(".input_new-task");//Add a new task.
+var addButton=document.querySelectorAll(".button")[0];//first button
+var incompleteTaskHolder=document.querySelector(".task-section__list_todo");//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector(".task-section__list_completed");//completed-tasks
 
 //New task list item
 var createNewTaskElement=function(taskString){
@@ -50,7 +49,7 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.className='button__icon';
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.alt='delete button';
-    
+
     deleteButton.appendChild(deleteButtonImg);
 
 

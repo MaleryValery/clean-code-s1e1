@@ -11,15 +11,15 @@
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <section class="task-section" id="task-section">
-        <label class="label" for="new-task">Add Item</label>
+      <section class="task-section">
+        <h3 class="task-section__title title title-add">Add Item</h3>
         <div class="task-wrapper">
-          <input id="new-task" class="task-section__input input input_edit">
+          <input class="task-section__input input input_edit input_new-task">
           <button class="task-section__btn-add button">Add</button>
         </div>
       </section>
       <section class="task-section">
-      <h3 class="title">Todo</h3>
+      <h3 class="task-section__title title">Todo</h3>
       <ul class="task-section__list task-section__list_todo">
         <li class="task-section__list-item">
           <input class="input" type="checkbox">
@@ -38,13 +38,14 @@
       </ul>
       </section>
       <section class="task-section">
-      <h3>Completed</h3>
+      <h3 class="task-section__title title">Completed</h3>
       <ul class="task-section__list task-section__list_completed">
         <li class="task-section__list-item">
           <input class="input" type="checkbox" checked>
           <label class="task-section__name label">See the Doctor</label>
           <input class="task-section__input input input_edit">
-          <button class="task-section__btn-edit button">Edit</button><img class="button__icon" src="./remove.svg" alt="delete button"></button>
+          <button class="task-section__btn-edit button">Edit</button>
+          <button class="task-section__btn-delete button"><img class="button__icon" src="./remove.svg" alt="delete button"></button>
         </li>
       </ul>
       </section>
