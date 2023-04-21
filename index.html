@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <p id="task-section">
+    </header>
+    <main class="main">
+      <section class="task-section" id="task-section">
         <label class="label" for="new-task">Add Item</label>
         <div class="task-wrapper">
           <input id="new-task" class="task-section__input input input_edit">
           <button class="task-section__btn-add button">Add</button>
         </div>
-      </p>
+      </section>
+      <section class="task-section">
       <h3 class="title">Todo</h3>
       <ul class="task-section__list task-section__list_todo">
         <li class="task-section__list-item">
@@ -35,6 +36,8 @@
           <button class="task-section__btn-delete button"><img class="button__icon" src="./remove.svg"></button>
         </li>
       </ul>
+      </section>
+      <section class="task-section">
       <h3>Completed</h3>
       <ul class="task-section__list task-section__list_completed">
         <li class="task-section__list-item">
@@ -44,7 +47,8 @@
           <button class="task-section__btn-edit button">Edit</button><img class="button__icon" src="./remove.svg"></button>
         </li>
       </ul>
-    </div>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
