@@ -32,18 +32,21 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className = "task-section__list-item";
+
     label.innerText=taskString;
-    label.className='task-section__name';
+    label.className='task-section__name label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className="input";
 
-    editInput.className="task-section__input";
+    editInput.className="task-section__input input input_edit";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="task-section__btn-edit";
+    editButton.className="task-section__btn-edit button";
 
-    deleteButton.className="task-section__btn-delete";
+    deleteButton.className="task-section__btn-delete button";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -82,8 +85,8 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('');
-    var label=listItem.querySelector("label");
+    var editInput=listItem.querySelector('.input_edit');
+    var label=listItem.querySelector(".task-section__name");
     var editBtn=listItem.querySelector(".task-section__btn-edit");
     var containsClass=listItem.classList.contains("task-section__list-item_edit");
     //If class of the parent is .editmode
@@ -156,8 +159,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.task-section__btn-edit");
-    var deleteButton=taskListItem.querySelector("button.task-section__btn-delete");
+    var editButton=taskListItem.querySelector(".task-section__btn-edit");
+    var deleteButton=taskListItem.querySelector(".task-section__btn-delete");
 
 
     //Bind editTask to edit button.
