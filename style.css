@@ -36,7 +36,7 @@
 .task-section__input, .task-section__name {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-wrapper {
@@ -134,7 +134,7 @@
 }
 
 .task-section__list-item > .input_edit {
-  width: 226px
+  width: 226px;
 }
 
 .button__icon {
@@ -149,18 +149,18 @@
 
 /* Completed */
 .task-section__list_completed .label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task-section__list .task-section__list-item .input_edit {
-  display: none
+  display: none;
 }
 
 .task-section__list .task-section__list-item_edit .input_edit {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task-section__list .task-section__list-item_edit .label {
