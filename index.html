@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <img class="header__img" 
+           src="./eisenhower-matrix.jpg" 
+           alt="The eisenhower matrix. How to make decisions on what is important and urgent">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main">
+      <section class="task-section">
+        <h3 class="task-section__title title title-add">Add Item</h3>
+        <div class="task-wrapper">
+          <input class="task-section__input input input_edit input_new-task">
+          <button class="task-section__btn-add button">Add</button>
+        </div>
+      </section>
+      <section class="task-section">
+        <h3 class="task-section__title title">Todo</h3>
+        <ul class="task-section__list task-section__list_todo">
+          <li class="task-section__list-item">
+            <input class="input" type="checkbox">
+            <label class="task-section__name label">Pay Bills</label>
+            <input class="task-section__input input input_edit">
+            <button class="task-section__btn-edit button">Edit</button>
+            <button class="task-section__btn-delete button"><img class="button__icon" src="./remove.svg" alt="delete button"></button>
+          </li>
+          <li class="task-section__list-item task-section__list-item_edit">
+            <input class="input" type="checkbox">
+            <label class="task-section__name label">Go Shopping</label>
+            <input value="Go Shopping" class="task-section__input input input_edit">
+            <button class="task-section__btn-edit button">Save</button>
+            <button class="task-section__btn-delete button"><img class="button__icon" src="./remove.svg" alt="delete button"></button>
+          </li>
+        </ul>
+      </section>
+      <section class="task-section">
+        <h3 class="task-section__title title">Completed</h3>
+        <ul class="task-section__list task-section__list_completed">
+          <li class="task-section__list-item">
+            <input class="input" type="checkbox" checked>
+            <label class="task-section__name label">See the Doctor</label>
+            <input class="task-section__input input input_edit">
+            <button class="task-section__btn-edit button">Edit</button>
+            <button class="task-section__btn-delete button"><img class="button__icon" src="./remove.svg" alt="delete button"></button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
