@@ -33,7 +33,8 @@
   margin: 0 auto 0;
 }
 
-.task-section__input, .task-section__name {
+.task-section__input,
+.task-section__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -48,11 +49,13 @@
   padding: 0px;
 }
 
-.task-section__list-item, .title {
+.task-section__list-item,
+.title {
   list-style: none;
 }
 
-.input,.button{
+.input,
+.button{
   outline: none;
 }
 
